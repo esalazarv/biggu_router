@@ -1,6 +1,6 @@
 import unittest
 from biggu_container import Container
-from biggu_router import Router
+from biggu_routing import Router
 
 
 class RouterTest(unittest.TestCase):
