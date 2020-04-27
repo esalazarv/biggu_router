@@ -26,6 +26,10 @@ class RouteParser:
 
     def parse_placeholders(self, route:str):
         matches = regex.findall(RouteParser.PATTERN, route)
+        
+        if not matches:
+            return [route]
+
         offset = 0
         route_data = []
         mapped = list(map(lambda match: [item for item in match if len(item)], matches))
