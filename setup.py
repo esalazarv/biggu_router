@@ -16,5 +16,5 @@ setup(
         "Programming Language :: Python :: 3.8",
     ],
     include_package_data=True,
-    install_requires=[],
+    install_requires=['regex'],
 )
